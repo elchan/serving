@@ -54,6 +54,8 @@ def main(_):
   if FLAGS.model_version <= 0:
     print('Please specify a positive value for version number.')
     sys.exit(-1)
+  else:
+    model_version = FLAGS.model_version
 
   # Train model
   print('Training model...')
